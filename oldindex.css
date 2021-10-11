@@ -1,0 +1,96 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+    p, h1, h2, h3, h4, h5, h6 {
+        font-family: 'JetBrainsMono';
+        color: white;
+    }
+    body{ 
+        background-color: #1d2256; 
+    }
+
+    a{
+        color: white
+    }
+
+
+    .wrapper{
+        width: 100%;
+
+    }
+
+    .page-title{
+        animation: fadeIn 2s;
+        position: absolute;
+        top:10%;
+        left:50%;
+        font-size: 2vmax;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+    }
+
+    .page-body{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        padding:0px;
+        margin:0px;
+        font-size: 2vmax;
+        transform: translate(-50%, -50%);
+        display: flex;   
+    }
+
+    
+
+    @keyframes hoverText {
+        from{
+            color: white;
+        }
+        
+        to {
+            color: dark grey;
+        }
+
+    }
+
+    
+    .services,
+    .about,
+    .social {
+        animation: fade-in 2s;
+    }
+
+
+    .social-menu ul {
+        position: absolute;
+        top:90%;
+        left:50%;
+        padding:0;
+        margin:0;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+    .social-menu ul li {
+        list-style: none;
+        margin: 0 2vmax;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 4vmax;
+    }
+
+    .social-menu ul li:hover {
+        animation: hoverText;
+    }
+
+
+  
