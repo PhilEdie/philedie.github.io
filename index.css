@@ -38,10 +38,13 @@
 
 
 
+
 .service {
-    float: left;
+    display: table-cell;
     width: 33.33%;
-    padding: 30px;
+    padding: 10px;
+    background-color: var(--clr-dark);
+    color: var(--clr-light)
 }
 
 @media screen and (max-width: 600px){
@@ -53,6 +56,7 @@
     }
 
     .service {
+        display: block; 
         width: 100%;
       }
 }
@@ -88,7 +92,7 @@ h2 {
     list-style: none;
     float: left;
     display: inline;
-    margin: 1rem;
+    margin: 0.75rem;
     font-size: var(--fs-h2);
     
     
@@ -98,7 +102,7 @@ h2 {
     position: absolute;
     left: 50%;
     transform: translate(-60%, -50%);
-    margin-top: 5rem;
+    margin-top: 6rem;
     
 }
 
