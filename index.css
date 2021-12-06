@@ -1,166 +1,201 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 /* custom properties. */
+:root {
+  --ff-header: "Archivo";
+  --ff-body: "Archivo";
+  --fw-reg: 300;
+  --fw-bold: 900;
 
-:root{
-    --ff-primary: 'Open Sans';
-    --fw-reg: 300;
-    --fw-bold: 900;
+  --clr-light: #f0efed;
+  --clr-dark: #262521;
+  --clr-accent: #1d2256;
+  --clr-background: #f0efed;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #1d2256;
-    --clr-background: #f8f8f8;
-    
-    
-    --fs-h1: 6rem;
-    --fs-h2: 3rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
-}
+  /* --fs-h1: 6rem;
+  --fs-h2: 3rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem; */
 
-.page-title {
-    text-align: center;
-}
-    
-
-.section_title--services{
-    text-align: center;    
-}
-
-.section_title--about{
-    text-align: center;    
-}
-
-
-
-
-.service {
-    display: table-cell;
-    width: 33.33%;
-    padding: 10px;
-    background-color: var(--clr-dark);
-    color: var(--clr-light)
-}
-
-@media screen and (max-width: 600px){
-    :root{
-        --fs-h1: 3rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1.25rem;
-        --fs-body: 1rem;   
-    }
-
-    .service {
-        display: block; 
-        width: 100%;
-      }
+  --fs-h1: 6vw;
+  --fs-h2: 3vw;
+  --fs-h3: 2.5vw;
+  --fs-h4: 2vw;
+  --fs-body: 1vw;
 }
 
 /* General styling */
 
 body {
-    
-    background: var(--clr-background);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+  background: var(--clr-background);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
 h1 {
-    font-size: var(--fs-h1);
-    padding: 0px;
-    margin: 10px;
+  font-size: var(--fs-h1);
+  font-family: var(--ff-header);
+  margin: 0px;
 }
 
 h2 {
-    font-size: var(--fs-h2);
+  font-size: var(--fs-h2);
+  font-family: var(--ff-header);
 }
 
-.about-me_body {
-    text-align: center;
-}
-
-
-.social-menu ul li {
-    list-style: none;
-    float: left;
-    display: inline;
-    margin: 0.75rem;
-    font-size: var(--fs-h2);
-    
-    
- }
-
-.social-menu ul {
-    position: absolute;
-    left: 50%;
-    transform: translate(-60%, -50%);
-    margin-top: 6rem;
-    
+h3 {
+  font-size: var(--fs-h3);
+  font-family: var(--ff-header);
 }
 
 a {
-    color: var(--clr-dark)
+  color: var(--clr-dark);
 }
 
+/* Header section */
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.to-type {
-    width: 9.5ch;
-    animation: typing 1.5s steps(15), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h1);
+.page-title {
+  text-align: center;
+  padding-top: 3rem;
+  line-height: 3em;
 }
 
+.page-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  
+.page-subtitle--to-type {
+  width: 15ch;
+  animation: typing 2s steps(18), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  font-family: var(--ff-header);
+  font-size: var(--fs-h2);
+}
+
 @keyframes typing {
-    from {
-      width: 0
-    }
+  from {
+    width: 0;
+  }
 }
-      
+
 @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
+/* Services section */
 
+.section_title--services {
+  text-align: center;
+}
 
+.service {
+  display: table-cell;
+  width: 33.33%;
+  padding: 10px;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
 
+.service--title {
+  text-align: center;
+}
 
+.service--body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
+/* Projects Section */
 
+.projects {
+  display: inline-block;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
 
+.project--text {
+  display: inline;
+  font-size: 2vw;
+}
 
+.project--image {
+  float: right;
+}
 
+/* About Me section */
 
+.section_title--personal-statement {
+  text-align: center;
+}
 
+/* Making the website responsive. */
+@media screen and (max-width: 600px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+  }
 
+  .service {
+    display: block;
+    width: 100%;
+  }
+}
 
+/* Making the website responsive. */
+@media screen and (max-width: 1000px) {
+  .projects {
+    padding: 0%;
+  }
+
+  .project--text {
+    display: block;
+    font-size: var(--ff-body);
+  }
+
+  .project--image {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.personal-statement--body {
+  text-align: center;
+}
+
+/* Social Icons */
+
+.social-menu ul li {
+  list-style: none;
+  float: left;
+  display: inline;
+  margin: 0.5rem;
+  font-size: var(--fs-h2);
+}
+
+.social-menu ul {
+  position: absolute;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  margin-top: 3rem;
+}

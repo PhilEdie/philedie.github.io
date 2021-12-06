@@ -5,80 +5,76 @@
   <meta charset="UTF-8">
   <meta name="description" content="Phil Edie - Software Engineer">
   <meta name="viewport" content="width=device-width" , initial-scale=1.0>
-  <title>Phil Edie</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
+  
+  <!-- Icons for Social Media -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--Font Head-->
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel = "stylesheet">
+  <!--Font Body-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">  
+
+  <title>Phil Edie</title>
+
 </head>
-
-
 
 <body>
   <!--Page Title-->
   <header>
     <div class="page-title">
-      <div class="wrapper">
-        <h1 class=to-type>Hi! I'm Phil.</h1>
+        <h1>Phil Edie</h1>
+      <div class="page-subtitle">
+        <h2 class="page-subtitle--to-type">Software Engineer.</h2>
       </div>
-      <h2 class="page-subtitle">Software Engineer // Data Scientist.</h2>
     </div>
   </header>
 
-  <!-- My services -->
-  <section class="my-services" id="services">
-    <h2 class="section_title section_title--services">What I do</h2>
+  <!-- My Services -->
+  <section class="services">
+    <h2 class="section_title--services">What I do</h2>
     <div class="service">
-      <h3>Software Development</h3>
-      <p>Developing software in Java, Python, and C/C++ both independently and within teams.</p>
+      <h3 class = "service--title">Software Development</h3>
+      <p class="service--body">Developing software in Java, Python, and C/C++ both independently and within teams.</p>
     </div>
 
     <div class="service">
-      <h3>Machine Learning</h3>
-      <p>Proficient with technologies such as Scikit-Learn and PyTorch.</p>
+      <h3 class = "service--title">Machine Learning</h3>
+      <p class="service--body">Proficient with technologies such as Scikit-Learn and PyTorch.</p>
     </div>
 
     <div class="service">
-      <h3>Data Analytics</h3>
-      <p>Experienced in exploratory data analysis, data preparation, and interpreting data.</p>
+      <h3 class = "service--title">Data Analytics</h3>
+      <p class="service--body">Experienced in exploratory data analysis, data preparation, and interpreting data.</p>
     </div>
   </section>
 
-  <!-- My services 
-  <section class="my-services" id="services">
-    <h2 class="section_title section_title--services">What I do</h2>
-      <div class="service">
-        <h3>Software Development</h3>
-        <p>Developing software in Java, Python, and C/C++ both independently and within teams.</p>
-      </div>
+  <!-- Projects -->
 
-      <div class="service">
-        <h3>Machine Learning</h3>
-        <p>Proficient with technologies such as Scikit-Learn and PyTorch.</p>
-      </div>
+  <section class="projects">
+    <h2 class="section_title--projects">Recent Projects</h2>
+    <div class="project">
+      <h3 class="project--title">Pokedex App</h3>
+      <img class = "project--image" src="pokedex.gif">
+      <p class="project--text">Pokedex app developed in Kotlin for Android. 
+          The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co" target="_blank">PokeAPI.</a> 
+          The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief description, and its stats. 
+          Users can search for Pokemon using either the Pokemon's name or ID. <a href="https://github.com/PhilEdie/Pokedex" target="_blank">View.</a>
+      </p>
+    </div>
+  </section>
 
-      <div class="service">
-        <h3>Data Analytics</h3>
-        <p>Experienced in exploratory data analysis, data preparation, and interpreting data.</p>
-      </div>
-    
-  </section> -->
 
   <!-- About Me -->
-
-  <section class="about-me" id="about">
-    <h2 class="section_title section_title--about">Who I am</h2>
-    <div class="about-me_body">
-      <p>I am a penultimate Computer Science student studying at Victoria University of Wellington.</p>
-      <p></p>
+  <section class="personal-statement">
+    <h2 class="section_title--personal-statement">Who I am</h2>
+    <div class="personal-statement--body">
+      <p>I am a Computer Science student in my final year at Victoria University of Wellington.</p>
     </div>
   </section>
 
 
   <footer>
-    <div class="social-menu" id="social">
+    <div class="social-menu">
       <ul>
         <li><a href="https://github.com/PhilEdie"><i class="fa fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/philedie"><i class="fa fa-linkedin"></i></a></li>
