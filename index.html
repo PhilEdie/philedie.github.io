@@ -6,45 +6,41 @@
   <meta name="description" content="Phil Edie - Software Engineer">
   <meta name="viewport" content="width=device-width" , initial-scale=1.0>
   <link rel="stylesheet" type="text/css" href="index.css">
-  
+
   <!-- Icons for Social Media -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!--Font Head-->
-  <link href="https://fonts.googleapis.com/css?family=Archivo" rel = "stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <!--Font Body-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 
   <title>Phil Edie</title>
 
 </head>
 
+<!--Page Title-->
+<header>
+  <div class="page-title">
+    <h1>Phil Edie</h1>
+    <div class="page-subtitle">
+      <h2 class="page-subtitle--to-type">Software Engineer.</h2>
+    </div>
+  </div>
+
+  <div class="social-menu">
+    <ul>
+      <li><a href="https://github.com/PhilEdie"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/philedie"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="mailto:ediephil@gmail.com?Subject=Hello%20Phil"><i class="fa fa-inbox"></i></a></li>
+    </ul>
+  </div>
+</header>
+
 <body>
-  <!--Page Title-->
-  <header>
-    <div class="page-title">
-        <h1>Phil Edie</h1>
-      <div class="page-subtitle">
-        <h2 class="page-subtitle--to-type">Software Engineer.</h2>
-      </div>
-    </div>
-  </header>
-
-  <!-- My Services -->
-  <section class="services">
-    <h2 class="section_title--services">What I do</h2>
-    <div class="service">
-      <h3 class = "service--title">Software Development</h3>
-      <p class="service--body">Developing software in Java, Python, and C/C++ both independently and within teams.</p>
-    </div>
-
-    <div class="service">
-      <h3 class = "service--title">Machine Learning</h3>
-      <p class="service--body">Proficient with technologies such as Scikit-Learn and PyTorch.</p>
-    </div>
-
-    <div class="service">
-      <h3 class = "service--title">Data Analytics</h3>
-      <p class="service--body">Experienced in exploratory data analysis, data preparation, and interpreting data.</p>
+  <!-- Personal Statement -->
+  <section class="personal-statement">
+    <div>
+      <p class="personal-statement--text"></p>
     </div>
   </section>
 
@@ -54,24 +50,45 @@
     <h2 class="section_title--projects">Recent Projects</h2>
     <div class="project">
       <h3 class="project--title">Pokedex App</h3>
-      <img class = "project--image" src="pokedex.gif">
-      <p class="project--text">Pokedex app developed in Kotlin for Android. 
-          The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co" target="_blank">PokeAPI.</a> 
-          The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief description, and its stats. 
-          Users can search for Pokemon using either the Pokemon's name or ID. <a href="https://github.com/PhilEdie/Pokedex" target="_blank">View.</a>
-      </p>
+      <div class="project-content">
+        <p class="project--text">Pokedex app developed in Kotlin for Android.
+          The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co"
+            target="_blank">PokeAPI.</a>
+          The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief
+          description, and its stats.
+          Users can search for Pokemon using either the Pokemon's name or ID. <a
+            href="https://github.com/PhilEdie/Pokedex" target="_blank">View.</a>
+        </p>
+        <img class="project--image" src="pokedex.gif">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3 class="project--title">Chapper's Challenge</h3>
+      <div class="project-content">
+        <p class="project--text">For my final Software Design project, I worked in a team of five people to implement a
+          java clone of Epyx’s 1989 game ‘Chips Challenge’.
+          Each member was responsible for one module each. I was responsible for the 'Persistence' module. I implemented
+          the save and load feature using XML parsing. I also implemented a plugin system which allows for any external
+          Java classes to be loaded in as enemies in the game. <a href="https://github.com/PhilEdie/Chappers-Challenge"
+            target="_blank">View.</a>
+        </p>
+        <img class="project--image" src="chappers challenge.gif">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3 class="project--title">TriviaBot</h3>
+      <div class="project-content">
+        <p class="project--text">A Discord bot which generates random multi-choice trivia questions. I developed
+          the bot in Python using Discord's python API. Questions and answers are received from the <a
+            href="https://opentdb.com/api_config.php" target="_blank">Open Trivia Database API.</a>
+          <a href="https://github.com/PhilEdie/TriviaBot" target="_blank">View.</a>
+        </p>
+        <img class="project--image" src="trivia bot example.PNG">
+      </div>
     </div>
   </section>
-
-
-  <!-- About Me -->
-  <section class="personal-statement">
-    <h2 class="section_title--personal-statement">Who I am</h2>
-    <div class="personal-statement--body">
-      <p>I am a Computer Science student in my final year at Victoria University of Wellington.</p>
-    </div>
-  </section>
-
 
   <footer>
     <div class="social-menu">
