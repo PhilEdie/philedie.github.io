@@ -12,7 +12,7 @@
   color: var(--clr-dark);
   font-family: var(--ff-body);
   background-color: var(--clr-background);
-  animation: fadein 0.5s;
+  animation: fadein 1.5s ease;
 }
 
 @keyframes fadein {
@@ -61,8 +61,6 @@
 
   .project--image {
     order: 2;
-    /* order: 2;
-    width: 100%; */
     float: none;
     display: block;
     object-fit: contain;
@@ -78,21 +76,21 @@
 @media screen and (min-width: 1000px) {
   /*Two Column Mode*/
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     text-align: center;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 1.5em;
     text-align: center;
   }
 
   body,
   a {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: justify;
   }
 
@@ -118,6 +116,8 @@
     object-fit: contain;
   }
 }
+
+/* Animation */
 
 section,
 .project {
