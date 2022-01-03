@@ -1,8 +1,7 @@
 /* custom properties. */
 :root {
-  --ff-header: "Archivo";
-  --ff-body: "Archivo";
-
+  --ff-body: "Nunito Sans", sans-serif;
+  --ff-header: "Playfair Display", serif;
   --clr-light: #f0efed;
   --clr-dark: #262521;
   --clr-background: #f0efed;
@@ -12,7 +11,24 @@
   color: var(--clr-dark);
   font-family: var(--ff-body);
   background-color: var(--clr-background);
-  animation: fadein 1.5s ease;
+  animation: fadein 0.5s ease;
+}
+
+/* Topnav */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 @keyframes fadein {
@@ -114,10 +130,15 @@
     align-content: flex-start;
     max-width: 30%;
     object-fit: contain;
+    border-radius: 5%;
   }
 }
 
 /* Animation */
+
+h1 {
+  font-family: var(--ff-header);
+}
 
 section,
 .project {
