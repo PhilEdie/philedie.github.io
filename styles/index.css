@@ -67,6 +67,9 @@
     display: flex;
     align-items: stretch;
     flex-flow: column wrap;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 4%;
   }
 
   .project--text {
@@ -114,7 +117,9 @@
     display: flex;
     align-items: stretch;
     flex-flow: row wrap;
-    padding: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
   }
 
   .project--text {
@@ -126,8 +131,9 @@
 
   .project--image {
     order: 2;
-    float: left;
+    float: right;
     align-content: flex-start;
+
     max-width: 30%;
     object-fit: contain;
   }
