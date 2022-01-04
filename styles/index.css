@@ -14,9 +14,6 @@
   animation: fadein 0.5s ease;
 }
 
-/* Topnav */
-
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
   text-align: center;
@@ -26,9 +23,9 @@
 .topnav a {
   float: center;
   text-align: center;
-  padding: 14px 16px;
+  padding-inline: 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 @keyframes fadein {
@@ -63,6 +60,11 @@
     text-align: justify;
   }
 
+  .topnav {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
   .project-content {
     display: flex;
     align-items: stretch;
@@ -72,6 +74,12 @@
     padding-bottom: 4%;
   }
 
+  .project--pokedex_text {
+    order: 1;
+    width: 100%;
+    float: none;
+  }
+
   .project--text {
     order: 1;
     width: 100%;
@@ -79,6 +87,18 @@
   }
 
   .project--image {
+    order: 2;
+    float: none;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .project--pokedex_image {
     order: 2;
     float: none;
     display: block;
@@ -113,6 +133,10 @@
     text-align: justify;
   }
 
+  .topnav a {
+    padding-inline: 20px;
+  }
+
   .project-content {
     display: flex;
     align-items: stretch;
@@ -133,8 +157,22 @@
     order: 2;
     float: right;
     align-content: flex-start;
-
     max-width: 30%;
+    object-fit: contain;
+  }
+
+  .project--pokedex_text {
+    order: 1;
+    float: left;
+    width: 60%;
+    padding-right: 20%;
+  }
+
+  .project--pokedex_image {
+    order: 2;
+    float: right;
+    align-content: flex-start;
+    max-width: 20%;
     object-fit: contain;
   }
 }
