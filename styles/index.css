@@ -98,6 +98,18 @@
     padding-top: 1rem;
   }
 
+  .project--full-width-image {
+    order: 2;
+    float: none;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
   .project--pokedex_image {
     order: 2;
     float: none;
@@ -159,6 +171,18 @@
     align-content: flex-start;
     max-width: 30%;
     object-fit: contain;
+  }
+
+  .project--full-width-image {
+    order: 2;
+    float: none;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   .project--pokedex_text {
