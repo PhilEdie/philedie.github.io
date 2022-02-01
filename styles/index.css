@@ -23,7 +23,8 @@
 .topnav a {
   float: center;
   text-align: center;
-  padding-inline: 10px;
+  padding-inline: 20px;
+  padding: 10px;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -56,7 +57,7 @@
 
   body,
   a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
   }
 
@@ -257,7 +258,7 @@ a:hover {
 .social-menu ul li a {
   display: block;
   text-align: center;
-  font-size: 150%;
-  padding: 0.5rem;
+  font-size: 200%;
+  padding: 1.5rem;
   text-decoration: none;
 }
