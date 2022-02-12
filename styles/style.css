@@ -122,6 +122,30 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
+
+  .about_me--section {
+    display: flex;
+    align-items: stretch;
+    flex-flow: column wrap;
+  }
+
+  .about_me--image {
+    order: 1;
+    float: none;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .about_me--text {
+    order: 2;
+    width: 100%;
+    float: none;
+  }
 }
 
 /* Tablet || Desktop */
@@ -200,6 +224,28 @@
     max-width: 20%;
     object-fit: contain;
   }
+
+  .about_me--section {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    padding: 4rem;
+  }
+
+  .about_me--image {
+    order: 1;
+    float: left;
+    align-content: flex-start;
+    max-width: 30%;
+    object-fit: contain;
+  }
+
+  .about_me--text {
+    order: 2;
+    float: left;
+    width: 60%;
+    padding-left: 10%;
+  }
 }
 
 /* Animation */
@@ -259,3 +305,5 @@ a:hover {
   padding: 1.5rem;
   text-decoration: none;
 }
+
+
