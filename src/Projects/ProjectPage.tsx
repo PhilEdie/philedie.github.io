@@ -1,63 +1,61 @@
+/* eslint-disable jsx-a11y/alt-text */
+import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useState } from 'react';
 import '../styles/style.css'
-import ProjectSection from './ProjectSection';
 
 
 const ProjectPage = () => {
-    return (
-        <>
-            <ProjectSection
-                title={'Website for Fare & Feed Breakfast Bar'}
-                description=
-                {
-                    <p>Pokedex app developed in Kotlin for Android.
-                        The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co"
-                            target="_blank">PokeAPI.</a>
-                    </p>
+     
+    const [repos, setRepos] = useState<any>([]);
+    const [images, setImages] = useState <Map<string, string>>(); // Repo name to image url
+
+    useEffect(() => {
+        fetch('https://api.github.com/users/philedie/repos')
+          .then(response => response.json())
+          .then(data => {
+            console.log(data);
+            setRepos(data);
+          });
+      }, []);
+    
+      useEffect(() => {
+        Promise.all(
+          repos.map((repo: { owner: { login: any; }; name: any; }) =>
+            fetch(`https://api.github.com/repos/${repo.owner.login}/${repo.name}/contents`)
+              .then(response => response.json())
+              .then(data => {
+                const imageFile = data.find((file: { type: string; name: string; }) => file.type === 'file' && file.name.startsWith('DisplayImage'));
+                return [repo.name, imageFile ? imageFile.download_url : null];
+              })
+          )
+        ).then(images => setImages(new Map(images)));
+      }, [repos]);
+
+
+      if (repos != null && images != null) {
+        return(
+            <>
+            {repos.map((repo : any) => (
+              <div>
+              <div key={repo.id} className="project">
+                <h2 className="project--title">{repo.name}</h2>
+                <div className="project-content">
+                  <div className='project--text'>
+                    <p>{repo.description}</p>
+                    <a href={repo.html_url}>View Repository</a>
+                  
+                </div>
+                {images.get(repo.name) && 
+                  <img src={images.get(repo.name)} className='project--image'/>
                 }
-                link={'https://github.com/PhilEdie/Fare-and-Feed-Breakfast-Bar'}
-                image={'images/FareAndFeed.JPG'}
-                imageAlt={"A screenshot of Fare & Feed Breakfast Bar's restaurant menu page."}
-            />
-            <ProjectSection
-                title={'Pokedex App'}
-                description=
-                {
-                    <div className="project--pokedex_text">
-                        <p>Pokedex app developed in Kotlin for Android. The Pokedex creates Pokemon objects using data retreived from
-                            <a href="https://pokeapi.co" target="_blank">PokeAPI.</a>
-                        </p >
-                        <p>
-                            The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief
-                            description, and its stats.
-                            Users can search for Pokemon using either the Pokemon's name or ID.</p>
-                    </div>
-                }
-                link={'https://github.com/PhilEdie/Pokedex'}
-                image={'images/pokedex.gif'}
-                imageAlt={"Demo footage of the Pokedex app."}
-            />
-            <ProjectSection
-                title={'Loan & Investment Optimiser'}
-                description=
-                {
-                    <>
-                        <p>
-                            A tool developed in Java which allows users to find the optimum distribution of
-                            payments across multiple loans and investments to maximize overall net worth.
-                        </p>
-                        <p>
-                            Users can enter as many loans or investments as needed. The program then makes minimum payments on each
-                            loan,
-                            then distributes the remaining funds to the accounts with the highest interest rates.
-                        </p>
-                    </>
-                }
-                link={'https://github.com/PhilEdie/Investment-and-Loan-Optimiser'}
-                image={'images/Investment Loan Optimiser.jpg'}
-                imageAlt={'A screenshot of the accounts entry screen.'} />
-        </>
-    );
-};
+                </div>
+              </div>
+              </div> 
+            ))}
+            </>
+        );
+    }
+    return null;
+}
 
 export default ProjectPage;
 
