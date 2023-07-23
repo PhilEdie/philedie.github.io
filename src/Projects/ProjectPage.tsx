@@ -3,19 +3,25 @@ import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEf
 import '../styles/style.css'
 
 
+interface Repository {
+  created_at : string
+}
+
+
 const ProjectPage = () => {
      
     const [repos, setRepos] = useState<any>([]);
     const [images, setImages] = useState <Map<string, string>>(); // Repo name to image url
 
     useEffect(() => {
-        fetch('https://api.github.com/users/philedie/repos')
-          .then(response => response.json())
-          .then(data => {
-            console.log(data);
-            setRepos(data);
-          });
-      }, []);
+      fetch('https://api.github.com/users/philedie/repos')
+        .then(response => response.json())
+        .then(data => {
+          const sortedRepos = data.sort((a:Repository, b: Repository) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+          sortedRepos.reverse()
+          setRepos(sortedRepos);
+        });
+    }, []);
     
       useEffect(() => {
         Promise.all(
