@@ -4,20 +4,30 @@
   --ff-header: "Playfair Display", serif;
   --clr-light: #f0efed;
   --clr-dark: #262521;
-  --clr-background: #f0efed;
 }
 
 * {
-  color: var(--clr-dark);
   font-family: var(--ff-body);
-  background-color: var(--clr-background);
+  color: var(--clr-dark);
   animation: fadein 0.5s ease;
+}
+h1 {
+  font-family: var(--ff-header);
 }
 
 .topnav {
   overflow: hidden;
   text-align: center;
 }
+
+a {
+  font-weight: bold;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -38,247 +48,10 @@
   }
 }
 
-/* Smart Phone */
-@media screen and (max-width: 999px) {
-  /*1 Column Mode */
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  body,
-  a {
-    font-size: 1.2rem;
-    text-align: justify;
-  }
-
-  .topnav {
-    display: flex;
-    flex-flow: column wrap;
-  }
-
-  .project-content {
-    display: flex;
-    align-items: stretch;
-    flex-flow: column wrap;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 4%;
-  }
-
-  .project--pokedex_text {
-    order: 1;
-    width: 100%;
-    float: none;
-  }
-
-  .project--text {
-    order: 1;
-    width: 100%;
-    float: none;
-  }
-
-  .project--image {
-    order: 2;
-    float: none;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    align-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .project--full-width-image {
-    order: 2;
-    float: none;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    align-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .project--pokedex_image {
-    order: 2;
-    float: none;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    align-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .about_me--section {
-    display: flex;
-    align-items: stretch;
-    flex-flow: column wrap;
-  }
-
-  .about_me--image {
-    order: 1;
-    float: none;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    align-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .about_me--text {
-    order: 2;
-    width: 100%;
-    float: none;
-  }
-}
-
-/* Tablet || Desktop */
-@media screen and (min-width: 1000px) {
-  /*Two Column Mode*/
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-  }
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  h3 {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  body,
-  a {
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  .topnav a {
-    padding-inline: 20px;
-  }
-
-  .project-content {
-    display: flex;
-    align-items: stretch;
-    flex-flow: row wrap;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 4%;
-  }
-
-  .project--text {
-    order: 1;
-    float: left;
-    width: 60%;
-    padding-right: 10%;
-  }
-
-  .project--image {
-    order: 2;
-    float: right;
-    align-content: flex-start;
-    max-width: 30%;
-    object-fit: contain;
-  }
-
-  .project--full-width-image {
-    order: 2;
-    float: none;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    align-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .project--pokedex_text {
-    order: 1;
-    float: left;
-    width: 70%;
-    padding-right: 10%;
-  }
-
-  .project--pokedex_image {
-    order: 2;
-    float: right;
-    align-content: flex-start;
-    max-width: 20%;
-    object-fit: contain;
-  }
-
-  .about_me--section {
-    display: flex;
-    align-items: stretch;
-    flex-flow: row wrap;
-    padding: 4rem;
-  }
-
-  .about_me--image {
-    order: 1;
-    float: left;
-    align-content: flex-start;
-    max-width: 30%;
-    object-fit: contain;
-  }
-
-  .about_me--text {
-    order: 2;
-    float: left;
-    width: 60%;
-    padding-left: 10%;
-  }
-}
-
-/* Animation */
-
-h1 {
-  font-family: var(--ff-header);
-}
-
-section,
-.project {
-  border-bottom: 1px solid var(--clr-dark);
-}
-
-body {
-  padding: 1rem;
-}
-
-a {
-  font-weight: bold;
-}
-
-
 a:hover {
   opacity: 0.7;
 }
 
-/* Personal Statement */
-.personal-statement {
-  align-content: center;
-}
-.personal-statement--text {
-  text-align: justify;
-}
 
 /* Social Icons */
 

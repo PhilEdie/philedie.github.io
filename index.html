@@ -2,27 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PJXSK6T');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103971777-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-103971777-1');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="description" content="Software Engineer based in Wellington, New Zealand.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,97 +9,54 @@
 
   <!-- Icons for Social Media -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display:wght@800&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display:wght@800&display=swap"
-    rel="stylesheet">
 
   <title>Phil Edie</title>
-
 </head>
 
 <!--Page Title-->
 <header>
-  <div class="page-title">
-    <h1>Phil Edie</h1>
-    <div class="page-subtitle">
-      <h2 class="page-subtitle--to-type">Software Engineer.</h2>
+  <div class="p-5">
+    <div class="container text-center">
+      <h1>Phil Edie</h1>
+      <div>
+        <h2>Software Engineer.</h2>
+      </div>
     </div>
-  </div>
-
-  <div class="topnav">
-    <a id="projects-page-link" href="index">{ Projects }</a>
-    <a id="about-page-link" href="about">{ About }</a>
-    <a id="resume-page-link" href="files/Phil Edie Resume.pdf" target="_blank">{ Résumé }</a>
-  </div>
-
-  <div class="social-menu">
-    <ul>
-      <li><a href="https://github.com/PhilEdie" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/philedie" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="mailto:ediephil@gmail.com?Subject=Hello%20Phil" target="_blank"><i class="fa fa-inbox"></i></a></li>
-    </ul>
+    <div class="container social-menu">
+      <ul>
+        <li><a href="https://github.com/PhilEdie" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/philedie" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="mailto:contact@philedie.com?Subject=Hello%20Phil" target="_blank"><i class="fa fa-inbox"></i></a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJXSK6T" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
 
-  <!-- Projects -->
-  <section class="projects--title">
+  <hr class="border">
+  <div class="text-center">
     <h2>Recent Projects</h2>
-  </section>
-  <section class="projects">
+  </div>
 
 
-    <div class="project">
-      <h3 class="project--title">Website for Fare & Feed Breakfast Bar</h3>
-      <div class="project-content">
-        <div>
-          <p>
-            A responsive web page for a local breakfast bar. I developed the project using HTML, Bootstrap 5, and
-            JavaScript.
-          </p>
-          <p>
-            The website includes a restaurant menu and an about page. Users can filter restaurant menu items using the
-            provided filter buttons.
-          </p>
-          <a href="https://philedie.com/Fare-and-Feed-Breakfast-Bar/" target="_blank">{ View Website }</a>
-          <a href="https://github.com/PhilEdie/Fare-and-Feed-Breakfast-Bar" target="_blank">{ View Code }</a>
-        </div>
-        <img class="project--full-width-image" src="images/FareAndFeed.JPG"
-          alt="A screenshot of Fare & Feed Breakfast Bar's restaurant menu page.">
-      </div>
+  <div class="container">
+    <div class="row text-center p-5">
+      <h3>Investment & Loan Optimiser</h3>
     </div>
-
-
-    <div class="project">
-      <h3 class="project--title">Pokedex App</h3>
-      <div class="project-content">
-        <div class="project--pokedex_text">
-          <p>Pokedex app developed in Kotlin for Android.
-            The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co"
-              target="_blank">PokeAPI.</a>
-          <p>
-            The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief
-            description, and its stats.
-            Users can search for Pokemon using either the Pokemon's name or ID.</p>
-          <a href="https://github.com/PhilEdie/Pokedex" target="_blank">{ View Code }</a>
-        </div>
-        <img class="project--pokedex_image" src="images/pokedex.gif" alt="Demo footage of the Pokedex app.">
-      </div>
-    </div>
-
-    <div class="project">
-      <h3 class="project--title">Loan & Investment Optimiser</h3>
-      <div class="project-content">
+    <div class="row align-items-center">
+      <div class="col-lg">
         <p>
           A tool developed in Java which allows users to find the optimum distribution of
           payments across multiple loans and investments to maximize overall net worth.
@@ -130,46 +66,65 @@
           loan,
           then distributes the remaining funds to the accounts with the highest interest rates.
         </p>
-        <a href="https://github.com/PhilEdie/Investment-and-Loan-Optimiser" target="_blank">{ View Code }</a>
-
-        <img class="project--full-width-image" src="images/Investment Loan Optimiser.jpg"
+        <a href="https://philedie.com/Investment-And-Loan-Optimiser" target="_blank">{ View Website }</a>
+      </div>
+      <div class="col-lg p-5">
+        <img class="img-fluid" src="images/Investment And Loan Optimiser.png"
           alt="A screenshot of the accounts entry screen.">
       </div>
     </div>
+    
+  </div>
+  <hr class="border">
 
-    <div class="project">
-      <h3 class="project--title">Chapper's Challenge</h3>
-      <div class="project-content">
-        <div class="project--text">
-          <p>For my final Software Design project, I worked in a team of five people to implement a
-            java clone of Epyx's 1989 game 'Chips Challenge'.
-            Each member was responsible for one module each. I was responsible for the 'Persistence' module. I
-            implemented
-            the save and load feature using XML parsing. I also implemented a plugin system which allows for any
-            external
-            Java classes to be loaded in as enemies in the game.</p>
-          <a href="https://github.com/PhilEdie/Chappers-Challenge" target="_blank">{ View Code }</a>
-        </div>
-        <img class="project--image" src="images/chappers challenge.gif"
-          alt="Gameplay footage of the second level of Chapper's Challenge.">
-      </div>
+  <div class="container">
+    <div class="row text-center p-5">
+      <h3>Website for Fare & Feed Breakfast Bar</h3>
+    </div>
+    <div class="row">
+      <p>
+        A responsive web page for a local breakfast bar. I developed the project using HTML, Bootstrap 5, and
+        JavaScript.
+      </p>
+      <p>
+        The website includes a restaurant menu and an about page. Users can filter restaurant menu items using the
+        provided filter buttons.
+      </p>
+
+      <a href="https://philedie.com/Fare-and-Feed-Breakfast-Bar/" target="_blank">{ View Website }</a>
     </div>
 
-    <div class="project">
-      <h3 class="project--title">TriviaBot</h3>
-      <div class="project-content">
-        <div class="project--text">
-          <p>A Discord bot which generates random multi-choice trivia questions. I developed
-            the bot in Python using Discord's python API. Questions and answers are received from the <a
-              href="https://opentdb.com/api_config.php" target="_blank">Open Trivia Database API.</a>
-          </p>
-          <a href="https://github.com/PhilEdie/TriviaBot" target="_blank">{ View Code }</a>
-        </div>
-        <img class="project--image" src="images/trivia bot example.jpg"
-          alt="A screenshot which shows how the TriviaBot is used.">
+    <div class="row p-5" >
+      <img class="img-fluid" src="images/FareAndFeed.JPG"
+        alt="A screenshot of Fare & Feed Breakfast Bar's restaurant menu page.">
+    </div>
+  </div>
+  </div>
+
+  <hr class="border">
+
+  <div class="container">
+    <div class="row text-center p-5">
+      <h3>Pokedex App</h3>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        <p>Pokedex app developed in Kotlin for Android.
+          The Pokedex creates Pokemon objects using data retreived from <a href="https://pokeapi.co"
+            target="_blank">PokeAPI.</a>
+        <p>
+          The Pokedex contains all 898 Pokemon. Users can click a Pokemon to display its species info, a brief
+          description, and its stats.
+          Users can search for Pokemon using either the Pokemon's name or ID.</p>
+        <a href="https://github.com/PhilEdie/Pokedex" target="_blank">{ View Code }</a>
+      </div>
+      <div class="col p-5">
+        <img class="img-fluid float-end" src="images/pokedex.gif" alt="Demo footage of the Pokedex app.">
       </div>
     </div>
-  </section>
+    </div>
+    <hr class="border">
+</div>
 </body>
 <footer>
   <div class="social-menu">
@@ -180,5 +135,4 @@
     </ul>
   </div>
 </footer>
-
 </html>
