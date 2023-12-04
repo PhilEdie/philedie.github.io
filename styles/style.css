@@ -11,8 +11,10 @@
   color: var(--clr-dark);
   animation: fadein 0.5s ease;
 }
+
 h1 {
   font-family: var(--ff-header);
+  font-size: 3rem !important;
 }
 
 .topnav {
