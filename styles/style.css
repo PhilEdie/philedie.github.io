@@ -14,7 +14,7 @@
 
 h1 {
   font-family: var(--ff-header);
-  font-size: 3rem !important;
+  font-size: 5rem !important;
 }
 
 .topnav {
@@ -28,6 +28,7 @@ a {
 
 h2, h3 {
   font-weight: bold;
+  font-size: 3rem !important;
 }
 
 
